@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ARK Map</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="ark-map.css" rel="stylesheet">
+	</head>
+	<body onload="initMap();">
+		<div id="main">
+			<div id="ark-map">
+			</div>
+			<div id="map-tooltip">
+			
+			</div>
+			
+			<div id="pin-tooltip">
+				Pinned By : 
+				Note : 
+			</div>
+			
+			<div id="add-pin-form">
+				<h5>New Pin</h5>
+				<div>
+					<label for="pin-x">X</label>
+					<input type="text" id="pin-x" name="pin-x" placeholder="X" />
+				</div>
+				<div>
+					<label for="pin-y">Y</label>
+					<input type="text" id="pin-y" name="pin-y" placeholder="Y" />
+				</div>
+				<div>
+					<label for="note">Note</label>
+					<input type="text" id="pin-note" name="pin-note" placeholder="Pin Note" />
+				</div>
+				<div>
+					<button onclick="addPin();">Add</button>
+					<button onclick="closePinForm();">Cancel</button>
+				</div>
+			</div>
+		</div>
+		
+		<script src="ark-map.js"></script>
+		<script src="jquery-2.1.4.js"></script>
+	</body>
+</html>
